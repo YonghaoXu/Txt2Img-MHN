@@ -1,0 +1,14 @@
+albumentations==1.2.1
+axial_positional_embedding==0.2.1
+einops==0.4.1
+matplotlib==3.5.0
+numpy==1.20.3
+omegaconf==2.0.0
+Pillow==9.2.0
+scipy==1.8.1
+tensorboardX==2.5.1
+torch==1.8.0+cu111
+torchvision==0.9.0+cu111
+pytorch-lightning==1.0.8
+tqdm==4.62.3
+youtokentome==1.0.6
