@@ -13,7 +13,7 @@ This is the official PyTorch implementation of the paper **[Txt2Img-MHN: Remote 
  3. [Training Txt2Img-MHN](#mhn)
  4. [Image Generation](#gen)
  5. [Inception Score and FID Score](#is)
- 6. [Clip Score](#clip)
+ 6. [CLIP Score](#clip)
  7. [Zero-Shot Classification](#cls)
  8. [Paper](#paper)
  9. [Acknowledgement](#acknowledgement)
@@ -117,11 +117,11 @@ $ cd Txt2Img-MHN-main/is_fid_score
 $ CUDA_VISIBLE_DEVICES=0 python is_fid_score.py --gen_dir /Path/To/GenImgFolder/ --data_dir /Path/To/RSICD/
 ```
 
-### Clip Score <a name="clip"></a>
-- Calculate the Clip score with the [CLIP model fine-tuned on the RSICD dataset](https://github.com/arampacha/CLIP-rsicd):
+### CLIP Score <a name="clip"></a>
+- Calculate the CLIP score with the [CLIP model fine-tuned on the RSICD dataset](https://github.com/arampacha/CLIP-rsicd):
 ```
 $ cd Txt2Img-MHN-main
-$ CUDA_VISIBLE_DEVICES=0 python is_fid_score.py --gen_dir /Path/To/GenImgFolder/ --data_dir /Path/To/RSICD/
+$ CUDA_VISIBLE_DEVICES=0 python clip_score.py --gen_dir /Path/To/GenImgFolder/ --data_dir /Path/To/RSICD/
 ```
 
 ### Zero-Shot Classification <a name="cls"></a>
@@ -140,6 +140,7 @@ Please cite the following paper if you find it useful for your research:
   title={Txt2Img-MHN: Remote Sensing Image Generation from Text Using Modern Hopfield Networks},
   author={Xu, Yonghao and Yu, Weikang and Ghamisi, Pedram and Kopp, Michael and Hochreiter, Sepp},
   journal={IEEE Trans. Image Process.}, 
+  doi={10.1109/TIP.2023.3323799},
   year={2023}
 }
 ```
